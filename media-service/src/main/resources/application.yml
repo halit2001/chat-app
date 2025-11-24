@@ -1,0 +1,20 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: media-service
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+cloudinary:
+  cloud-name: dxwyexycb
+  api-key: 473569459528771
+  api-secret: zylCX4CKA2P2BBN6xmfgLfbCtmw

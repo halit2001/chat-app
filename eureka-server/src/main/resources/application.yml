@@ -1,0 +1,19 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: eureka-server
+  cloud:
+    discovery:
+      enabled: true
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    enableSelfPreservation: false
+    evictionIntervalTimerInMs: 30000
+    renewalPercentThreshold: 0.85
+    defaultZone: http://localhost:8761/eureka/
