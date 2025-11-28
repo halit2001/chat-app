@@ -6,7 +6,7 @@ spring:
     name: server-service
   data:
     mongodb:
-      uri: mongodb+srv://shatabey001:halit2001@cluster0.msdzv98.mongodb.net/serversdb?retryWrites=true&w=majority
+      uri: ${SERVER_MONGO_URI}
       database: serversdb
 
 eureka:

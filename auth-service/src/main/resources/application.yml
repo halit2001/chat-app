@@ -6,7 +6,7 @@ spring:
     name: auth-service
   data:
     mongodb:
-      uri: mongodb+srv://shatabey001:halit2001@cluster0.msdzv98.mongodb.net/usersdb?retryWrites=true&w=majority
+      uri: ${USER_MONGO_URI}
       database: usersdb
   redis:
     host: localhost
